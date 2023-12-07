@@ -1,0 +1,4 @@
+INSERT INTO Follows (UserID, HelperID)
+SELECT u1.UserID, u2.UserID
+FROM Users u1
+JOIN Users u2 ON u2.Username = "Chris Pollett" AND u1.Username = "Bob Smith";
